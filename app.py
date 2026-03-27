@@ -40,7 +40,7 @@ def search_email(email, ddgs_client):
     except:
         pass
     try:
-        results = list(ddgs_client.text(query, max_results=1))
+        results = list(ddgs_client.text(query, max_results=5))
         if results:
             link = results[0].get('href')
             return {"Status": "Found", "Engine": "DuckDuckGo", "Source": link, "Category": get_source_category(link, email_domain)}
