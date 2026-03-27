@@ -1,0 +1,6 @@
+streamlit
+pandas
+duckduckgo_search
+requests
+plotly
+openpyxl
